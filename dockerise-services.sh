@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+set -e
 echo "changing permissions.."
 chmod 777 $HOME/git/vistairone/services/attachment-service/local-docker-build.sh
 chmod 777 $HOME/git/vistairone/services/auditing-service/local-docker-build.sh

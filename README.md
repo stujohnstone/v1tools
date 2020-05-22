@@ -22,6 +22,7 @@ For Vistair One you will need:-
  - NodeJS (plus NPM)
  - OpenJDK 11
  - Docker Desktop for Windows
+ - Terraform
  
  Script as follows for Linux
 ```bash
@@ -31,10 +32,21 @@ sudo apt install nodejs  --yes
 sudo apt install npm  --yes
 sudo apt install git  --yes
 ```
+
 Configure git
 ```
 git config --global user.email "<fname.lastname>@vistair.com"  
 git config --global user.name "<fname.lastname>"
+```
+
+Install Terraform
+```
+install-terraform.sh
+```
+
+Login to Docker
+```
+docker login nexus.hq.vistair.com:8085
 ```
 
 Run the fresh start script.
@@ -55,6 +67,9 @@ chmod 777 ./build-libs.sh
 chmod 777 ./build-services.sh
 chmod 777 ./dockerise-services.sh
 chmod 777 ./setup-cluster.sh
+chmod 777 ./pull-deploy.sh
+chmod 777 ./pull-libs.sh
+chmod 777 ./pull-services.sh
 ```
 
 ##  Contributing

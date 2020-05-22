@@ -1,3 +1,4 @@
+set -e
 echo "java.."
 mvn clean install -DskipTests -f $HOME/git/vistairone/services/attachment-service
 mvn clean install -DskipTests -f $HOME/git/vistairone/services/auditing-service
